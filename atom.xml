@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>教えて、ベア先生</title>
+  
+  <subtitle>數學好難、寫程式好難、什麼都好難</subtitle>
+  <link href="https://bearomorphism.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://bearomorphism.github.io/"/>
+  <updated>2022-02-09T11:51:17.437Z</updated>
+  <id>https://bearomorphism.github.io/</id>
+  
+  <author>
+    <name>bearomorphism</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>開寫部落格</title>
+    <link href="https://bearomorphism.github.io/2022/02/09/%E9%96%8B%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC/"/>
+    <id>https://bearomorphism.github.io/2022/02/09/%E9%96%8B%E5%AF%AB%E9%83%A8%E8%90%BD%E6%A0%BC/</id>
+    <published>2022-02-09T19:42:15.000Z</published>
+    <updated>2022-02-09T11:51:17.437Z</updated>
+    
+    <content type="html"><![CDATA[<p>上個暑假以前就想著要有一個網路空間來紀錄一些事情，像是學習紀錄、自行車路線或是技術筆記等等，結果拖拖拉拉就拖到現在了。</p><p>有認識我的人應該都知道我算是一個蠻重度的臉書使用者，但最近臉書的審查制度越來越奇怪了。除此之外，臉書也不是一個很適合紀錄太多東西的地方，這些細節可以之後在聊聊。</p><p>不知道應該附上什麼，就隨便附上一個恭賀新年影片吧。</p><div class="video-container"><iframe src="https://www.youtube.com/embed/2qkXeYBNmBw" frameborder="0" loading="lazy" allowfullscreen></iframe></div>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;上個暑假以前就想著要有一個網路空間來紀錄一些事情，像是學習紀錄、自行車路線或是技術筆記等等，結果拖拖拉拉就拖到現在了。&lt;/p&gt;
+&lt;p&gt;有認識我的人應該都知道我算是一個蠻重度的臉書使用者，但最近臉書的審查制度越來越奇怪了。除此之外，臉書也不是一個很適合紀錄太多東西的地方，這些</summary>
+      
+    
+    
+    
+    
+    <category term="mood" scheme="https://bearomorphism.github.io/tags/mood/"/>
+    
+  </entry>
+  
+</feed>
