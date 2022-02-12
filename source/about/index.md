@@ -14,6 +14,18 @@ updated: 2022-02-11
 
 Feel free to contact me via Facebook, Instagram, or email if you want to know me or to exchange ideas.
 
+## 個人學經歷
+
+* 資訊之芽培訓計畫 講師 (107~)
+* 臺灣大學資訊工程學系 資料結構與演算法 助教 (108~)
+* 110-1 修畢臺大數學系雙主修畢業學分
+* 臺灣大學資訊工程學系 演算法設計與分析 助教 (109 ~ 110)
+* 樂居科技股份有限公司 工程部實習生 (2021.2 ~ 2021.8)
+* 109 學年度 微積分1, 2, 3 助教
+* 2018 畢業於高雄市立高雄高級中學
+* 2015 畢業於高雄市立左營國中
+* 2012 畢業於高雄市立勝利國小 坐過講台旁邊的特別座
+
 ## Links
 
 * [GitHub](https://github.com/bearomorphism)
