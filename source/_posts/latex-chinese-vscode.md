@@ -13,7 +13,7 @@ date: 2022-02-14 15:12:15
 
 每次我要用 LaTeX 編譯出帶有中文的文件，我都要偷看以前寫的作業，不然就是重新上網查一遍。但是網路資訊又很亂很雜要看好久，乾脆今天把懶人包整理下來，一勞永逸。
 
-## 環境設置
+## 環境設置與教學
 
 首先先安裝好 [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop)
 
@@ -40,6 +40,8 @@ date: 2022-02-14 15:12:15
 ```
 
 最後 Ctrl + S 即會編譯出 PDF
+
+## 結果
 
 ![Image of editor](/images/2022-02-14-14-39-18.png)
 
