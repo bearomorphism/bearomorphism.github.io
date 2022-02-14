@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>如何使用 Vscode LaTeX Workshop 上用 xelatex 編譯出帶中文的文件</title>
+    <url>/2022/02/14/latex-chinese-vscode/</url>
+    <content><![CDATA[<blockquote>
+<p>早上好 Vscode, 現在我有 LaTeX, 我很喜歡 LaTeX.</p>
+</blockquote>
+<p>這篇文章的目標是記錄如何用 Vscode LaTeX Workshop 成功用 xelatex 編譯有中文的文件。</p>
+<p>每次我要用 LaTeX 編譯出帶有中文的文件，我都要偷看以前寫的作業，不然就是重新上網查一遍。但是網路資訊又很亂很雜要看好久，乾脆今天把懶人包整理下來，一勞永逸。</p>
+<h2 id="環境設置"><a href="#環境設置" class="headerlink" title="環境設置"></a>環境設置</h2><p>首先先安裝好 <a href="https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop">LaTeX Workshop</a></p>
+<p>這個插件有好幾個優點，其中我最中意的優點是：在儲存時會自動編譯出 PDF 檔案 (build LaTeX (including BibTeX) to PDF automatically on save)</p>
+<p><img src="https://github.com/James-Yu/LaTeX-Workshop/raw/master/demo_media/preview.gif" alt="Cool gif"></p>
+<p>不過這裡預設的編譯器是 pdflatex, 然而有些我需要用的 package 要用 xelatex 才可以編譯成功，例如 xeCJK</p>
+<p>要解決這個問題很簡單，在 <code>settings.json</code> 中加入以下這一行，原因請見 references 中的 Stack Overflow 問答</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">    ...</span><br><span class="line">    <span class="attr">&quot;latex-workshop.latex.build.forceRecipeUsage&quot;</span><span class="punctuation">:</span> <span class="keyword">false</span><span class="punctuation">,</span></span><br><span class="line">    ...</span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<p>接著在 tex 檔的第一行加入 <a href="https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile#tex-program-and-options">magic command</a></p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="meta">% !TeX program = xelatex</span></span><br></pre></td></tr></table></figure>
+
+<p>最後 Ctrl + S 即會編譯出 PDF</p>
+<p><img src="/images/2022-02-14-14-39-18.png" alt="Image of editor"></p>
+<p>這裡附上我使用的完整 tex 檔案</p>
+<figure class="highlight latex"><table><tr><td class="code"><pre><span class="line"><span class="meta">% !TeX program = xelatex</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">\documentclass</span>&#123;article&#125;</span><br><span class="line"><span class="keyword">\usepackage</span>&#123;xeCJK&#125;</span><br><span class="line"><span class="keyword">\setCJKmainfont</span>&#123;NotoSansCJK-regular.ttc&#125; <span class="comment">% 設定字體</span></span><br><span class="line"><span class="keyword">\begin</span>&#123;document&#125;</span><br><span class="line"></span><br><span class="line">Et reprehenderit sunt consequat labore anim sunt qui eu cupidatat irure deserunt reprehenderit exercitation enim. Reprehenderit laboris Lorem amet ad minim dolor aute occaecat sit. Qui excepteur nostrud in sit.</span><br><span class="line"></span><br><span class="line">早上好中国 <span class="keyword">\\</span></span><br><span class="line">现在我有 bing chilling <span class="keyword">\\</span></span><br><span class="line">我很喜欢 bing chilling <span class="keyword">\\</span></span><br><span class="line">但是 <span class="keyword">\\</span></span><br><span class="line">速度与激情9 <span class="keyword">\\</span></span><br><span class="line">比 bing chilling <span class="keyword">\\</span></span><br><span class="line">速度与激情 <span class="keyword">\\</span></span><br><span class="line">速度与激情9 <span class="keyword">\\</span></span><br><span class="line">我最喜欢 <span class="keyword">\\</span></span><br><span class="line">所以…现在是音乐时间 <span class="keyword">\\</span></span><br><span class="line">准备 1 2 3 <span class="keyword">\\</span></span><br><span class="line">两个礼拜以后 <span class="keyword">\\</span></span><br><span class="line">速度与激情9 <span class="keyword">\\</span></span><br><span class="line">两个礼拜以后 <span class="keyword">\\</span></span><br><span class="line">速度与激情9 <span class="keyword">\\</span></span><br><span class="line">两个礼拜以后 <span class="keyword">\\</span></span><br><span class="line">速度与激情9 <span class="keyword">\\</span></span><br><span class="line">不要忘记 <span class="keyword">\\</span></span><br><span class="line">不要错过 <span class="keyword">\\</span></span><br><span class="line">记得去电影院看速度与激情9 <span class="keyword">\\</span></span><br><span class="line">因为非常好电影 <span class="keyword">\\</span></span><br><span class="line">动作非常好 <span class="keyword">\\</span></span><br><span class="line">差不多一样 bing chilling <span class="keyword">\\</span></span><br><span class="line">再见</span><br><span class="line"><span class="keyword">\end</span>&#123;document&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>
+<li><a href="https://stackoverflow.com/questions/56109128/enable-xelatex-in-latex-workshops-for-visual-studio-code">Enable xelatex in Latex Workshops for Visual Studio Code</a></li>
+</ul>
+]]></content>
+      <tags>
+        <tag>latex</tag>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>換名字</title>
     <url>/2022/02/13/naming/</url>
     <content><![CDATA[<p>之前的名字是亂取的，然後就會被亂造謠。現在這個名字雖然也是亂取的但應該取得比較好。今天偷懶一點不寫太多東西，結尾放上<a href="https://www.youtube.com/channel/UCCTEGdb7XMWnpVYRHwiVWnA">我現在最喜歡的大尾 YouTuber 多米多羅</a>的影片。</p>
